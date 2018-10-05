@@ -1,0 +1,40 @@
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+
+n = int(input())  # the number of temperatures to analyse
+tempList=[]
+
+for i in input().split():
+    # t: a temperature expressed as an integer ranging from -273 to 5526
+    t = int(i)
+    smaller_value=0
+    # Create a list of temperature
+    # Add temperature in a list
+    tempList.append(t)
+    print(tempList)
+    
+
+# List route
+for element in tempList:
+    # if positive temperature smaller than each element, temperature becomes smaller value
+          if abs(t) < abs(element):
+                print("Temperature ",t," plus petit ou égal à ",element)
+                smaller_value=t
+            # if temperature equal as element of list
+            elif abs(t) == abs(element):
+                # We check if there are a positive value
+                if t >= 0:
+                    smaller_value=t
+                else:
+                    # If temperature isn't positive, we can choose element of list
+                    smaller_value=element
+        
+
+# Write an action using print
+# To debug: print("Debug messages...", file=sys.stderr)
+
+print(smaller_value)
