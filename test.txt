@@ -1,3 +1,8 @@
 Test d'import vers GitHub
+<<<<<<< HEAD
 Ajout d'une nouvelle ligne
 Ajout d'une dernière ligne sur Master
+=======
+Remplacement de la seconde ligne pour 3eme branche
+Ajout d'une ligne sur la branche
+>>>>>>> troisieme_branche
