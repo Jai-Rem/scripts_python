@@ -8,9 +8,9 @@ class Drug:
 		self.nameDrug=nameDrug
 		self.priceDrug=priceDrug
 
-	def getNameDrug(self):
+	def _getNameDrug(self):
 		return (self.nameDrug)
 
-	def getPriceDrug(self):
+	def _getPriceDrug(self):
 		return (self.priceDrug)
 

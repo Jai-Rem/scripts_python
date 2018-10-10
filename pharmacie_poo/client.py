@@ -2,13 +2,14 @@
 
 class Client:
 
-	NUM_CLIENT = ""
-	NAME_CLIENT = ""
-	CREDIT_CLIENT = ""
-
 	listClients=[]
 
 	def __init__(self, nameClient, creditClient):
 		self.nameClient = nameClient
 		self.creditClient = creditClient
 
+	def _getNameClient(self):
+		return (self.nameClient)
+
+	def _getPriceDrug(self):
+		return (self.creditClient)
